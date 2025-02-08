@@ -1,4 +1,4 @@
-package com.devtiro.books.domain;
+package com.vibesyncer.books.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Book {
+public class BookPersistStatus {
 
-  private String isbn;
+  private boolean created;
 
-  private String author;
-
-  private String title;
+  private Book book;
 }

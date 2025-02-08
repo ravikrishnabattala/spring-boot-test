@@ -1,7 +1,7 @@
-package com.devtiro.books.controllers;
+package com.vibesyncer.books.controllers;
 
-import com.devtiro.books.domain.Book;
-import com.devtiro.books.services.BookService;
+import com.vibesyncer.books.domain.Book;
+import com.vibesyncer.books.services.BookService;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

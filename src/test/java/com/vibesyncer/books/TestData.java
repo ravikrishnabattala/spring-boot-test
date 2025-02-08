@@ -1,7 +1,7 @@
-package com.devtiro.books;
+package com.vibesyncer.books;
 
-import com.devtiro.books.domain.Book;
-import com.devtiro.books.domain.BookEntity;
+import com.vibesyncer.books.domain.Book;
+import com.vibesyncer.books.domain.BookEntity;
 
 public final class TestData {
 

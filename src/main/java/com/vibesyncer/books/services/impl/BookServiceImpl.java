@@ -1,9 +1,9 @@
-package com.devtiro.books.services.impl;
+package com.vibesyncer.books.services.impl;
 
-import com.devtiro.books.domain.Book;
-import com.devtiro.books.domain.BookEntity;
-import com.devtiro.books.repositories.BookRepository;
-import com.devtiro.books.services.BookService;
+import com.vibesyncer.books.domain.Book;
+import com.vibesyncer.books.domain.BookEntity;
+import com.vibesyncer.books.repositories.BookRepository;
+import com.vibesyncer.books.services.BookService;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

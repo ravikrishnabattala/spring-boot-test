@@ -1,7 +1,7 @@
-package com.devtiro.books.services.impl;
+package com.vibesyncer.books.services.impl;
 
-import static com.devtiro.books.TestData.testBook;
-import static com.devtiro.books.TestData.testBookEntity;
+import static com.vibesyncer.books.TestData.testBook;
+import static com.vibesyncer.books.TestData.testBookEntity;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -9,9 +9,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.devtiro.books.domain.Book;
-import com.devtiro.books.domain.BookEntity;
-import com.devtiro.books.repositories.BookRepository;
+import com.vibesyncer.books.domain.Book;
+import com.vibesyncer.books.domain.BookEntity;
+import com.vibesyncer.books.repositories.BookRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -24,9 +24,11 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class BookServiceImplTest {
 
-  @Mock private BookRepository bookRepository;
+  @Mock
+  private BookRepository bookRepository;
 
-  @InjectMocks private BookServiceImpl underTest;
+  @InjectMocks
+  private BookServiceImpl underTest;
 
   @Test
   public void testThatBookIsSaved() {
@@ -34,6 +36,7 @@ public class BookServiceImplTest {
 
     final BookEntity bookEntity = testBookEntity();
 
+    when(bookRepository.save(bookEntity)).thenReturn(bookEntity);
     when(bookRepository.save(eq(bookEntity))).thenReturn(bookEntity);
 
     final Book result = underTest.save(book);

@@ -1,8 +1,8 @@
-package com.devtiro.books.controllers;
+package com.vibesyncer.books.controllers;
 
-import com.devtiro.books.TestData;
-import com.devtiro.books.domain.Book;
-import com.devtiro.books.services.BookService;
+import com.vibesyncer.books.TestData;
+import com.vibesyncer.books.domain.Book;
+import com.vibesyncer.books.services.BookService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,6 +14,7 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 

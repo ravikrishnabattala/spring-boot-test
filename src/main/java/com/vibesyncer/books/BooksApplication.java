@@ -1,4 +1,4 @@
-package com.devtiro.books;
+package com.vibesyncer.books;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
